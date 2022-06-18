@@ -1,14 +1,33 @@
+.App-header {
+    background-image:url("head.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color: rgb(253, 167, 196);
+    width:100vw;
+    height:10vw;
+    display: flex;
+    font-family: Papyrus;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(25px + 2vmin);
+    font-weight: bold;
+    color:rgb(241, 205, 232);
+    text-shadow: 0 0 15px rgb(216, 51, 51);
+    
+  }
+
 .input {
-    background-color: rgb(69, 162, 255);
+    background-color: rgb(253, 167, 196);
     border-radius: 5vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: inline-flex;
     margin: 2vh auto;
-    padding: 4vh;
+    padding: 3vh;
 }
 
 .image {
-    background-color: rgb(69, 162, 255);
+    background-color: rgb(216, 228, 240);
     border-radius: 1vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: inline-flex;

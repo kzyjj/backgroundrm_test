@@ -4,6 +4,8 @@ import { setActionStatus } from '../../features/removebg/removebgSlice';
 import loadImage from "blueimp-load-image";
 import "./RemoveBG.css";
 import ReactLoading from 'react-loading';
+import { Button, Col, Row } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function RemoveBG() {
 
@@ -50,8 +52,6 @@ export default function RemoveBG() {
         else{
             dispatch(setActionStatus(false));
         }
-
-
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api#example_fetching_images
         const outputBlob = await response.blob();
 
@@ -73,20 +73,24 @@ export default function RemoveBG() {
 
     return (
         <div className="main">
+            <Row>
+                <div className="App-header"></div>
+            </Row>
             <div className="input">
-                <input type="file" onChange={imgUpload} />
-                <button onClick={uploadImage}>Remove Background</button>
+                <input type="file" onChange={imgUpload} accept=".jpg, .png" />
+                <Button onClick={uploadImage} size="sm" variant="link">點擊去背</Button>
             </div>
-            <div>
+            <Col>
                 {status ? <div className="image">
-                    <img id="result" alt="" src={b} />
-                    <button id="btn" onClick="handle_click()">下載</button>
-                    {/* <a href={b} download>Click to download</a>
-
-                    <button onClick={downloadBlob.bind(this, b)}></button> */}
+                    <Row>
+                        <img id="result" alt="" src={b} />
+                    </Row>
+                    <div>
+                        <Button id="btn" variant="secondary">下載</Button>
+                    </div>
                  </div>: null}
                 {status === false ? <ReactLoading id="loading" type="spin" color="#000000" height={100} width={100} /> : null} 
-            </div>
+            </Col>
 
         </div>
     )

@@ -4,14 +4,16 @@ import RemoveBG from './components/RemoveBG/RemoveBG';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <p>Image Background Removal Tool</p>
-      </header>
       <RemoveBG />
-
+      <div className="test">
+      </div>
     </div>
+   
   );
 }
+
+
 
 export default App;

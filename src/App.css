@@ -2,13 +2,21 @@
   text-align: center;
 }
 
-.App-header {
-  max-height: 8vh;
-  background-color: rgb(112, 236, 255);
-  display: flex;
-  font-family: 'Otomanopee One';
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+img{
+ display: block;
+ height: auto;
+ width: 900px;
+ background-size:contain;
+ background-repeat:no-repeat;
+background-position: center center;
+}
+
+.test{
+  background-image:url( 'bg.png' );
+  background-position:center;
+  height: 80vw;
+  width: 100vw;
+  background-repeat:no-repeat;
+  background-size:contain;
 }
