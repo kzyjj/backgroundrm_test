@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function RemoveBG() {
 
-
     const status = useSelector((state) => state.status.bgRemoved);
     const dispatch = useDispatch();
 
@@ -28,7 +27,6 @@ export default function RemoveBG() {
         dispatch(setActionStatus(false));
 
         const resizedImage = await loadImage(image, {
-        // resize before sending to PhotoRoom for performance
         maxWidth: 1500,
         maxHeight: 1500,
         canvas: true
@@ -52,7 +50,6 @@ export default function RemoveBG() {
         else{
             dispatch(setActionStatus(false));
         }
-        // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api#example_fetching_images
         const outputBlob = await response.blob();
 
         b = URL.createObjectURL(outputBlob);
@@ -74,11 +71,11 @@ export default function RemoveBG() {
     return (
         <div className="main">
             <Row>
-                <div className="App-header"></div>
+                <img src="https://img.onl/9pKe5f"/>          
             </Row>
             <div className="input">
                 <input type="file" onChange={imgUpload} accept=".jpg, .png" />
-                <Button onClick={uploadImage} size="sm" variant="link">點擊去背</Button>
+                    <Button onClick={uploadImage} size="sm" variant="link">點擊去背</Button>
             </div>
             <Col>
                 {status ? <div className="image">
