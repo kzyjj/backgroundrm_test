@@ -1,32 +1,12 @@
-.App-header {
-    background-image:url("Remove.gif");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-color: #ffdeb3;
-    width:150vw;
-    height:10vw;
-    display: flex;
-    font-family: Papyrus;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(25px + 2vmin);
-    font-weight: bold;
-    color:#ffdeb3;
-    text-shadow: 0 0 15px rgb(216, 51, 51);
-    
-  }
-  
-  img{
+ img{
     height: auto;
     max-width: 100%;
   }
 
 .input {
-    background-color: rgb(224, 207, 179);
+    background-color: #eae5e1;
     border-radius: 5vh;
-    /* width:100vw; */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 3vh auto;
     padding: 3vh;
 }
@@ -36,7 +16,7 @@
 }
 
 .image {
-    background-color: rgb(216, 228, 240);
+    background-color: rgb(229, 237, 246);
     border-radius: 1vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: inline-flex;

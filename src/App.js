@@ -7,13 +7,11 @@ function App() {
     
     <div className="App">
       <RemoveBG />
-      <div className="test">
-      </div>
+      <div className="test"></div>
     </div>
    
   );
 }
-
 
 
 export default App;

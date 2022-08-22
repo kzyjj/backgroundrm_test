@@ -71,7 +71,7 @@ export default function RemoveBG() {
     return (
         <div className="main">
             <Row>
-                <img src="https://img.onl/9pKe5f"/>          
+                <img src="https://img.onl/0Vm94Z"/>          
             </Row>
             <div className="input">
                 <input type="file" onChange={imgUpload} accept=".jpg, .png" />
